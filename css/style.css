@@ -298,7 +298,7 @@ Author: Rebecca Staley
 
 	hr {
 		width: 40%;
-		min-width: 400px;
+/*		min-width: 400px;*/
 	}
 
 	section {
@@ -508,7 +508,7 @@ Author: Rebecca Staley
 	#navPhotos:hover,
 	#navBook:hover,
 	#navResources:hover {
-		color: #10A4BC;
+		color: #ccc;
 	}
 
 /******************************************
@@ -578,46 +578,31 @@ Author: Rebecca Staley
 /*******************************************/
 
 	#photos {
-		width: 100%;
-		margin: 120px auto;
+		width: 95%;
+		margin: 120px 0;
 		padding: 2%;
 		overflow: auto;
+		position:relative;
 	}
 
-	.allPhotos {
-		margin: 0 auto;
+	#allPhotos {
+		margin: 0 auto 0 200px;
 		width: 80%;
 		-webkit-transition: all 1s ease;
 		-moz-transition: all 1s ease;
 		transition: all 1s ease;
 	}
 
-	.photoMenu {
-		margin: 30px auto;
-		width: 100%;
+	#photoMenu {
+		margin: 20px;
+		width: 180px;
 		text-align: justify;
+		position:fixed;
+		top:120px;
+		left: 10px;
+		
 	}
 
-	.photoMenu label:after {
-	    content: '';
-	    display: inline-block;
-	    width: 100%;
-	}
-
-	.photoMenu label:before {
-	    content: '';
-	    display: block;
-	    margin-top: -1.25em;
-	}
-
-	.photoMenu label {
-		margin-right: -.25em;
-	    padding: .75em 1.5em;
-	    position: relative;
-	    top: 1.25em;
-		display: inline-block;
-		text-align: justify;
-	}
 
 	.pic {
 		position: relative;
@@ -629,8 +614,12 @@ Author: Rebecca Staley
 	}
 
 	.pic img {
-		width: 22.2%;
+		width: 22%;
 		margin: 20px auto 0 auto;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		transition: all 1s ease;
+		
 	}
 
 	.caption {
@@ -652,19 +641,65 @@ Author: Rebecca Staley
 		color: white;
 	}
 
-	label {
-		padding: 2.5%;
-		font-size: 1.4em;
-
+	button.picButton {
+		margin: 4px;
+		background-color:#FFF;
+		border:none;
+		font-size:1em;
+		font-family: "adobe-garamond-pro", baskerville, serif;
+		padding: 5px;
+		display:block;
+		text-align:left;
+		width: 180px;
 	}
+	button:focus {
+		outline:0;
+}
+button:hover {
+	color: #03B4B9;
+}
 
-	label:first-child {
-		padding-left: 1%;
-	}
+#photoMenu>h5{
+		Margin:0 0 10px 2%;
+		Padding-left: 5px;
 
-	label:last-child {
-		padding-right: 0;
-	}
+}
+
+#photoMenu hr{
+	width: 180px;
+	margin: 10px auto;
+	color: #e0e0e0;
+
+}
+	
+.picButton.selected {
+	background-color: rgba(0,50,80,0.50);
+	border:none;
+	color:white;
+}
+
+
+#showAll {
+	border:none;
+	font-style:italic;
+	font-size: 1em;
+}
+
+
+#showAll.selected {
+		background-color:#FFF;
+		font-family: "adobe-garamond-pro", baskerville, serif;
+		padding: 5px;
+		display:block;
+		text-align:left;
+		width: 160px;
+		color: black;
+}
+
+#showAll:hover {
+	color: #03B4B9;
+}
+
 
 	.resourcesPlaceholder {
 		width: 100%;

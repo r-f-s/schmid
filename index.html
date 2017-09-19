@@ -1382,241 +1382,428 @@
 
             <div id="photos" class="hidden">
                 
-                <div class="allPhotos">
-                    <div class="photoMenu">
-                        <label><input type="checkbox" name="WilliPics" id="WilliPics" value="willi">Willi</label>
-                        <label><input type="checkbox" name="KatePics" id="KatePics" value="kate">Kate</label> 
-                        <label><input type="checkbox" name="SchmidFamily" id="SchmidFamily" value="schmidOrigins">The Schmid family</label>
-                        <label><input type="checkbox" name="Music" id="Music" value="music">Music</label>
-                        <label><input type="checkbox" name="Tietz" id="Tietz" value="tietz">The Tietz family</label>
-                        <label><input type="checkbox" name="SchmidKids" id="SchmidKids" value="willi">The Schmid children</label>
+                    <div id="photoMenu">
+                       	<h5>SHOW ONLY:</h5>
+                        <button class="picButton" type="button" name="WilliPics" id="WilliPics" value="willi">Willi</button>
+                     	<button class="picButton" type="button" name="KatePics" id="KatePics" value="kate">Kate</button>
+                     	<button class="picButton" type="button" name="SchmidFamily" id="SchmidFamily" value="schmid">The Schmid family</button>
+                        <button class="picButton" type="button" name="Music" id="Music" value="music">Music</button>
+                        <button class="picButton" type="button" name="Tietz" id="Tietz" value="tietz">The Tietz family</button>
+                        <button class="picButton" type="button" name="SchmidKids" id="SchmidKids" value="schmidkids">The Schmid children</button>
+                        <hr/>
+                        <button class="picButton" type="button" name="ShowAll" id="showAll" value="pic">Show All</button>
+                        <hr/>
+                        
                     </div>
                     
-                    <div class="pic schmidOrigins">
-                        <a href="img/schmid/detwang.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-05.png" alt="The house in Detwang" ></a>
+                    
+<!--                    PHOTOS START HERE-->
+                   
+                   
+                
+                    <ul id="allPhotos">
+                    <li class="pic schmid">
+                        <a href="img/schmid/detwang.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-05.png" alt="The house in Detwang" ></a>
                         <div class="caption hidden">
                             <h5>The house in Detwang</h5>
                         </div>
-                    </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/WilhelmBrunhuebner.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-43.png" alt="Wilhelm Brünhubner" ></a>
+                        <div class="caption hidden">
+                            <h5>Wilhelm Brünhubner</h5>
+                        </div>
+                    </li>
 
-                    <div class="pic schmidOrigins">
-                        <a href="img/schmid/josefschmid.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-06.png" alt="Josef (Pipsi) Schmid"></a>
+                    <li class="pic schmid">
+                        <a href="img/schmid/josefschmid.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-06.png" alt="Josef (Pipsi) Schmid"></a>
                         <div class="caption hidden">
                             <h5>Josef (Pipsi) Schmid</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidOrigins">
-                        <a href="img/schmid/retabrunhubner.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-07.png" alt="Margarethe Brünhubner"></a>
+                    <li class="pic schmid">
+                        <a href="img/schmid/retabrunhubner.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-07.png" alt="Margarethe Brünhubner"></a>
                         <div class="caption hidden">
                             <h5>Margarethe Brünhubner</h5>
                         </div>
-                    </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/hans.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-38.png" alt="Hans Brünhubner"></a>
+                        <div class="caption hidden">
+                            <h5>Hans Brünhubner in the 1890's</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/Babette.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-37.png" alt="Babette Brünhubner"></a>
+                        <div class="caption hidden">
+                            <h5>Babette Brünhubner in the 1890's</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/Reta.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-39.png" alt="Reta Brünhubner"></a>
+                        <div class="caption hidden">
+                            <h5>Reta Brünhubner in the 1890's</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/HansBrunhuebner.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-40.png" alt="Hans Brünhubner"></a>
+                        <div class="caption hidden">
+                            <h5>Hans Brünhubner</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/HansBrunhuebner1930s.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-42.png" alt="Hans Brünhubner in the 1930's"></a>
+                        <div class="caption hidden">
+                            <h5>Hans Brünhubner in the 1930's</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmid">
+                        <a href="img/schmid/JosefSchmid1930s.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-41.png" alt="Josef Schmid"></a>
+                        <div class="caption hidden">
+                            <h5>Josef Schmid (Pipsi) in the 1930's</h5>
+                        </div>
+                    </li>
 
-                    <div class="pic Willi schmidOrigins">
-                         <a href="img/schmid/schmids_1914.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-08.png" alt="The Schmid family, 1914"></a>
+                    <li class="pic willi schmid">
+                         <a href="img/schmid/schmids_1914.jpg" data-lightbox="schmids"><img data-tags="willi, schmid" src="img/Thumbnails/schmid_thumbnails-08.png" alt="The Schmid family, 1914"></a>
                         <div class="caption hidden">
                             <h5>The Schmid family, 1914</h5>
                         </div>
-                    </div>
+                    </li>
                     
-                     <div class="pic Willi music">
-                        <a href="img/schmid/Willi1912.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-09.png" alt="Willi (right, with violin) in an early trio, 1912"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/WilliTegernseeCostume.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-50.png" alt="Willi dressed in traditional Tegernsee costume"></a>
+                        <div class="caption hidden">
+                            <h5>Willi dressed in traditional Tegernsee costume</h5>
+                        </div>
+                    </li>
+                    
+                     <li class="pic willi music">
+                        <a href="img/schmid/Willi1912.jpg" data-lightbox="schmids"><img data-tags="willi, music" src="img/Thumbnails/schmid_thumbnails-09.png" alt="Willi (right, with violin) in an early trio, 1912"></a>
                         <div class="caption hidden">
                             <h5>Willi (right, with violin) in an early trio, 1912</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi music">
-                        <a href="img/schmid/Violenquintett1931.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-10.png" alt="Das Münchener Violenquintett c.1931"></a>
+                    <li class="pic willi music">
+                        <a href="img/schmid/Violenquintett1931.jpg" data-lightbox="schmids"><img data-tags="willi, music" src="img/Thumbnails/schmid_thumbnails-10.png" alt="Das Münchener Violenquintett c.1931"></a>
                         <div class="caption hidden">
                             <h5>Das Münchener Violenquintett c.1931</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi music">
-                        <a href="img/schmid/trio.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-11.png" alt="Gamba Trio"></a>
+                    <li class="pic willi music">
+                        <a href="img/schmid/trio.jpg" data-lightbox="schmids"><img data-tags="willi, music" src="img/Thumbnails/schmid_thumbnails-11.png" alt="Gamba Trio"></a>
                         <div class="caption hidden">
                             <h5>Gamba Trio</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi">
-                        <a href="img/schmid/Willi1913.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-12.png" alt="Willi, 1913"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1913.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-12.png" alt="Willi, 1913"></a>
                         <div class="caption hidden">
                             <h5>Willi, 1913</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi">
-                        <a href="img/schmid/Willi1918.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-13.png" alt="Willi, 1918"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1917.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-60.png" alt="Willi, 1917"></a>
+                        <div class="caption hidden">
+                            <h5>Willi, 1917</h5>
+                        </div>
+                    </li>
+                       
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1918.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-13.png" alt="Willi, 1918"></a>
                         <div class="caption hidden">
                             <h5>Willi, 1918</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi">
-                        <a href="img/schmid/Willi1919.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-14.png" alt="Willi reading, 1919"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1919.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-14.png" alt="Willi reading, 1919"></a>
                         <div class="caption hidden">
                             <h5>Willi reading, 1919</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi">
-                        <a href="img/schmid/Willi1933-1.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-15.png" alt="Willi, 1933"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1933-1.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-15.png" alt="Willi, 1933"></a>
                         <div class="caption hidden">
                             <h5>Willi, 1933</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Willi">
-                        <a href="img/schmid/Willi1933.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-16.png" alt="Willi at his desk, 1933"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/Willi1933.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-16.png" alt="Willi at his desk, 1933"></a>
                         <div class="caption hidden">
                             <h5>Willi at his desk, 1933</h5>
                         </div>
-                    </div>
+                    </li>
                     
-                    <div class="pic Kate">
-                        <a href="img/schmid/Kate1917.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-18.png" alt="Kate, 1917"></a>
+                    <li class="pic willi">
+                        <a href="img/schmid/WilliAntHill.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-44.png" alt="Willi inspecting an ant hill"></a>
+                        <div class="caption hidden">
+                            <h5>Willi inspecting an ant hill</h5>
+                        </div>
+                    </li>
+                    
+                      <li class="pic willi">
+                        <a href="img/schmid/WilliFish.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-45.png" alt="Willi holding up a fish"></a>
+                        <div class="caption hidden">
+                            <h5>Willi holding up a fish</h5>
+                        </div>
+                    </li>
+                    
+                      <li class="pic willi">
+                        <a href="img/schmid/WilliHiking.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-46.png" alt="Willi hiking"></a>
+                        <div class="caption hidden">
+                            <h5>Willi hiking</h5>
+                        </div>
+                    </li>
+                    
+                        <li class="pic willi">
+                        <a href="img/schmid/WilliInABeerGarden.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-47.png" alt="Willi in a Beer Garden"></a>
+                        <div class="caption hidden">
+                            <h5>Willi in a beer garden</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic willi">
+                        <a href="img/schmid/WilliSillyHat.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-48.png" alt="Willi in a silly hat"></a>
+                        <div class="caption hidden">
+                            <h5>Willi wearing a silly hat</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic willi">
+                        <a href="img/schmid/WilliWithTheKids.jpg" data-lightbox="schmids"><img data-tags="willi" src="img/Thumbnails/schmid_thumbnails-49.png" alt="Willi with the kids"></a>
+                        <div class="caption hidden">
+                            <h5>Willi with Duscha and Thomi</h5>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="pic kate">
+                        <a href="img/schmid/Kate1917.jpg" data-lightbox="schmids"><img data-tags="kate" src="img/Thumbnails/schmid_thumbnails-18.png" alt="Kate, 1917"></a>
                         <div class="caption hidden">
                             <h5>Kate, 1917</h5>
                         </div>
-                    </div>
+                    </li>
+                    
+                    <li class="pic kate">
+                        <a href="img/schmid/KateYoung.jpg" data-lightbox="schmids"><img data-tags="kate" src="img/Thumbnails/schmid_thumbnails-51.png" alt="Kate 1922"></a>
+                        <div class="caption hidden">
+                            <h5>Kate, 1922</h5>
+                        </div>
+                    </li>
 
-                    <div class="pic Kate">
-                        <a href="img/schmid/Kate.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-17.png" alt="Kate, 1918"></a>
+                    <li class="pic kate">
+                        <a href="img/schmid/Kate.jpg" data-lightbox="schmids"><img data-tags="kate" src="img/Thumbnails/schmid_thumbnails-17.png" alt="Kate, 1918"></a>
                         <div class="caption hidden">
                             <h5>Kate, 1918</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate">
-                        <a href="img/schmid/Kate_at_the_water.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-19.png" alt="Kate by the water"></a>
+                    <li class="pic kate">
+                        <a href="img/schmid/Kate_at_the_water.jpg" data-lightbox="schmids"><img data-tags="kate" src="img/Thumbnails/schmid_thumbnails-19.png" alt="Kate by the water"></a>
                         <div class="caption hidden">
                             <h5>Kate by the water</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate Willi">
-                        <a href="img/schmid/Kate_Willi_1918.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-20.png" alt="Kate and Willi, 1918"></a>
+                    <li class="pic kate willi">
+                        <a href="img/schmid/Kate_Willi_1918.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-20.png" alt="Kate and Willi, 1918"></a>
                         <div class="caption hidden">
                             <h5>Kate and Willi, soon after their first meeting in 1918</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Tietz">
-                        <a href="img/schmid/hedwig.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-21.png" alt="Hedwig Pinner Tietz, c.1914"></a> 
+                   
+                   <li class="pic kate willi">
+                        <a href="img/schmid/KateandWilliinWinter.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-52.png" alt="Kate and Willi in Winter"></a>
+                        <div class="caption hidden">
+                            <h5>Kate and Willi out for a walk</h5>
+                        </div>
+                    </li>
+
+                    <li class="pic tietz">
+                        <a href="img/schmid/hedwig.jpg" data-lightbox="schmids"><img data-tags="tietz" src="img/Thumbnails/schmid_thumbnails-21.png" alt="Hedwig Pinner Tietz, c.1914"></a> 
                         <div class="caption hidden">
                             <h5>Hedwig Pinner Tietz, c.1914</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate Willi">
-                        <a href="img/schmid/SchmidOehler1933.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-22.png" alt="Kate and Will with the Oehlers, 1933"></a>
+                    <li class="pic kate willi">
+                        <a href="img/schmid/SchmidOehler1933.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-22.png" alt="Kate and Will with the Oehlers, 1933"></a>
                         <div class="caption hidden">
                             <h5>Kate and Willi with the Oehlers, 1933</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate Willi">
-                        <a href="img/schmid/KateWilli1933.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-23.png" alt="Kate and Willi, 1933"></a>
+                    <li class="pic kate willi">
+                        <a href="img/schmid/KateWilli1933.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-23.png" alt="Kate and Willi, 1933"></a>
                         <div class="caption hidden">
                             <h5>Kate and Willi, 1933</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate Willi">
-                        <a href="img/schmid/Wedding.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-24.png" alt="Kate and Willi at their wedding"></a>
+                    <li class="pic kate willi">
+                        <a href="img/schmid/Wedding.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-24.png" alt="Kate and Willi at their wedding"></a>
                         <div class="caption hidden">
                             <h5>Kate and Willi at their wedding</h5>
                         </div>
-                    </div>
+                    </li>
+                    
+                    <li class="pic kate willi">
+                        <a href="img/schmid/Haniels.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-56.png" alt="Kate and Willi with the Haniel family"></a>
+                        <div class="caption hidden">
+                            <h5>Kate and Willi with the Haniels</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic kate">
+                        <a href="img/schmid/KateSkiing.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-59.png" alt="Kate skiing"></a>
+                        <div class="caption hidden">
+                            <h5>Kate skiing</h5>
+                        </div>
+                    </li>
 
-                    <div class="pic schmidChildren Kate Tietz">
-                        <a href="img/schmid/KateHedwigDuscha.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-25.png" alt="Kate, Oma Hedi, and baby Duscha, c.1925"></a>
+                    <li class="pic schmidkids kate tietz">
+                        <a href="img/schmid/KateHedwigDuscha.jpg" data-lightbox="schmids"><img data-tags="kate, schmidkids, tietz"  src="img/Thumbnails/schmid_thumbnails-25.png" alt="Kate, Oma Hedi, and baby Duscha, c.1925"></a>
                         <div class="caption hidden">
                             <h5>Kate, Oma Hedi, and baby Duscha, c.1925</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidChildren Kate Willi">
-                        <a href="img/schmid/KateWilliDuscha.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-26.png" alt="Kate, Willi, and Duscha, c.1925"></a>
+                    <li class="pic schmidkids kate willi">
+                        <a href="img/schmid/KateWilliDuscha.jpg" data-lightbox="schmids"><img data-tags="kate, schmidkids, willi" src="img/Thumbnails/schmid_thumbnails-26.png" alt="Kate, Willi, and Duscha, c.1925"></a>
                         <div class="caption hidden">
                             <h5>Kate, Willi, and baby Duscha, c.1925</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidChildren schmidOrigins Kate">
-                        <a href="img/schmid/at_the_water.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-27.png" alt="Kate, Pipsi, Thomi, and Duscha at the water"></a>
+                    <li class="pic schmidkids schmid kate">
+                        <a href="img/schmid/at_the_water.jpg" data-lightbox="schmids"><img data-tags="kate, schmidkids, schmid" src="img/Thumbnails/schmid_thumbnails-27.png" alt="Kate, Pipsi, Thomi, and Duscha at the water"></a>
                         <div class="caption hidden">
                             <h5>Kate, Pipsi, Thomi, and Duscha at the water</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidChildren">
-                        <a href="img/schmid/Thomi.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-28.png" alt="Thomi"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/Thomi.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-28.png" alt="Thomi"></a>
                         <div class="caption hidden">
                             <h5>Thomi</h5>
                         </div>
-                    </div>
+                    </li>
                     
-                    <div class="pic schmidChildren">
-                        <a href="img/schmid/ThomiHediDuscha.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-29.png" alt="The three Schmid children"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/ThomiandTheGardener.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-61.png" alt="Thomi and the gardener"></a>
+                        <div class="caption hidden">
+                            <h5>Thomi with the gardener</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/ThomiPassport.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-58.png" alt="Thomi's Passport Photo"></a>
+                        <div class="caption hidden">
+                            <h5>Thomi's passport photo</h5>
+                        </div>
+                    </li>
+                   
+                   <li class="pic schmidkids">
+                        <a href="img/schmid/DuschaPassport.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-57.png" alt="Duscha's passport photo"></a>
+                        <div class="caption hidden">
+                            <h5>Duscha's passport photo</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/HediInHerStroller.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-53.png" alt="Hedi in her stroller"></a>
+                        <div class="caption hidden">
+                            <h5>Hedi in her stroller</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/ThomiHediDuscha.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-29.png" alt="The three Schmid children"></a>
                         <div class="caption hidden">
                             <h5>The three Schmid children</h5>
                         </div>
-                    </div>
+                    </li>
+                    
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/SchmidKids.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-54.png" alt="The three Schmid children"></a>
+                        <div class="caption hidden">
+                            <h5>The three Schmid children</h5>
+                        </div>
+                    </li>
+                    
+                    <li class="pic kate">
+                        <a href="img/schmid/Kate1930.jpg" data-lightbox="schmids"><img data-tags="kate, schmidkids, willi" src="img/Thumbnails/schmid_thumbnails-55.png" alt="Kate, 1930"></a>
+                        <div class="caption hidden">
+                            <h5>Kate, 1930</h5>
+                        </div>
+                    </li>
 
-                    <div class="pic schmidChildren Kate">
-                        <a href="img/schmid/DuschaKate.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-30.png" alt="Kate and Duscha"></a>
+                    <li class="pic schmidkids kate">
+                        <a href="img/schmid/DuschaKate.jpg" data-lightbox="schmids"><img data-tags="schmidkids, kate" src="img/Thumbnails/schmid_thumbnails-30.png" alt="Kate and Duscha"></a>
                         <div class="caption hidden">
                             <h5>Kate and Duscha</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidChildren">
-                        <a href="img/schmid/BabeHedi.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-31.png" alt="Baby Hedi"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/BabeHedi.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-31.png" alt="Baby Hedi"></a>
                         <div class="caption hidden">
                             <h5>Baby Hedi</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic Kate Willi">
-                        <a href="img/schmid/KateWilliRabbit.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-32.png" alt="Kate and Willi with a rabbit"></a>
+                    <li class="pic kate willi">
+                        <a href="img/schmid/KateWilliRabbit.jpg" data-lightbox="schmids"><img data-tags="kate, willi" src="img/Thumbnails/schmid_thumbnails-32.png" alt="Kate and Willi with a rabbit"></a>
                         <div class="caption hidden">
                             <h5>Kate and Willi with a rabbit</h5>
                         </div>
-                    </div>
+                    </li>
                     
-                    <div class="pic schmidChildren">
-                        <a href="img/schmid/KinzlDuscha.jpg" data-lightbox="schmids" ><img src="img/Thumbnails/schmid_thumbnails-33.png" alt="Duscha's portrait (Kinzl)"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/KinzlDuscha.jpg" data-lightbox="schmids" ><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-33.png" alt="Duscha's portrait (Kinzl)"></a>
                         <div class="caption hidden">
                             <h5>Duscha's portrait (by Kinzl, 1929)</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidChildren">
-                        <a href="img/schmid/DuschaAndHedi1932.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-34.png" alt="Duscha and Hedi"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/DuschaAndHedi1932.jpg" data-lightbox="schmids"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-34.png" alt="Duscha and Hedi"></a>
                         <div class="caption hidden">
                             <h5>Duscha and Hedi</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic">
-                        <a href="img/schmid/DuschaAndThomi1930.jpg" data-lightbox="schmids" class="schmidChildren"><img src="img/Thumbnails/schmid_thumbnails-35.png" alt="Duscha and Thomi"></a>
+                    <li class="pic schmidkids">
+                        <a href="img/schmid/DuschaAndThomi1930.jpg" data-lightbox="schmids" class="schmidChildren"><img data-tags="schmidkids" src="img/Thumbnails/schmid_thumbnails-35.png" alt="Duscha and Thomi"></a>
                         <div class="caption hidden">
                             <h5>Duscha and Thomi</h5>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="pic schmidOrigins">
-                        <a href="img/schmid/ToniAndWalter.jpg" data-lightbox="schmids"><img src="img/Thumbnails/schmid_thumbnails-36.png" alt="Walter Schmid and Tanti Toni"></a>
+                    <li class="pic schmid">
+                        <a href="img/schmid/ToniAndWalter.jpg" data-lightbox="schmids"><img data-tags="schmid" src="img/Thumbnails/schmid_thumbnails-36.png" alt="Walter Schmid and Tanti Toni"></a>
                         <div class="caption hidden">
                             <h5>Walter and Toni</h5>
                         </div>
-                    </div>
+                      </li>
+                </ul>
                 
-                </div><!-- centerPhotos -->
             </div><!-- photos -->
 
             <div id="resources" class="hidden">

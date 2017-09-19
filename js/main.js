@@ -15,7 +15,7 @@ $("document").ready(function(){
 				"-moz-animation": "none",
 				"-ms-animation": "none",
 			    "animation": "none"
-		})
+		});
 
 		if ($(window).scrollTop() >= "900") {
 			$(".introPic").css({
@@ -154,7 +154,7 @@ $("document").ready(function(){
 			$(".moveOn.toCh8, .moveBack.toCh6, .moveOn.toCh2").hide();
 			$(".moveBack.toCh7").show();
 			if ($("body").scrollTop() >= "2000") {
-				$("#chapter8").find(".introPic img").attr("src", "img/KateAndWilli_crop.jpg")
+				$("#chapter8").find(".introPic img").attr("src", "img/KateAndWilli_crop.jpg");
 				$(".introText").hide();
 			} else {
 				$("#chapter8").find(".introPic img").attr("src", "img/WilliStudy.jpg");
@@ -302,25 +302,34 @@ $("document").ready(function(){
 //PHOTO MENU SELECTIONS//
 ///////////
 
-	$("#WilliPics").change(function() {
-	    if(this.checked) {
-	        $(".pic").hide();
-	        $(".Willi").show();
-	    } else {
-	    	$(".pic").show();
-	    }
-	});
+$("#photoMenu .picButton").on("click", function(){
+	$(".picButton.selected").removeClass("selected");
+	$(this).addClass("selected");
+	
+	var filterVal = $(this).val();
+        
+   
+    $("ul#allPhotos li").each(function() {
+        if(!$(this).hasClass(filterVal)) {
+          $(this).fadeOut(100).addClass('hidden');
+        } else {
+          $(this).delay(100).fadeIn('normal').removeClass('hidden');
+        }
+      });
+});	
+	
 
-	$("#KatePics").change(function() {
-	    if(this.checked) {
-	        $(".pic").hide();
-	        $(".Kate").show();
-	    } else {
-	    	$(".pic").show();
-	    }
-	});
+/*$("#WilliPics").on("click", function(){
+	$(".pic").hide();
+	$(".willi").toggleClass("selected");
+	*/
+	
+
+	
 
 
+    
+    
 
 
 
